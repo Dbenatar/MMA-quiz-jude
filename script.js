@@ -4,25 +4,25 @@ const questionContainerElement = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 
-let shuffledQuestions, currentQuestionsIndex;
+let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
-  currentQuestionsIndex++;
+  currentQuestionIndex++;
   setNextQuestion();
 });
 
 function startGame() {
-  startButton.classlist.add("hide");
+  startButton.classList.add("hide");
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  currentQuestionsIndex = 0;
+  currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
 }
 
 function setNextQuestion() {
   resetState();
-  showQuesiton(shuffledQuestions[currentQuestionsIndex]);
+  showQuesiton(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuesiton(question) {
@@ -54,7 +54,7 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
   });
-  if (shuffledQuestions.length > currentQuestionsIndex + 1) {
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
     startButton.innerText = "Restart";
