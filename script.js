@@ -80,7 +80,7 @@ function clearStatusClass(element) {
 const questions = [
   {
     question:
-      "What is the name of the Brazilian family who poularised MMA and began a jujitsu school?",
+      "What is the name of the Brazilian family who popularised MMA and began a jujitsu school?",
     answers: [
       { text: "Gracie", correct: true },
       { text: "Figo", correct: false },
