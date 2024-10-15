@@ -76,23 +76,26 @@ function clearStatusClass(element) {
   element.classList.remove("wrong");
 }
 
+// "answers" not "answer"?
 const questions = [
   {
-    question: "How many legs does an insect have?",
+    question:
+      "What is the name of the Brazilian family who poularised MMA and began a jujitsu school?",
     answers: [
-      { text: "6", correct: true },
-      { text: "8", correct: false },
-      { text: "2", correct: false },
-      { text: "12", correct: false },
+      { text: "Gracie", correct: true },
+      { text: "Figo", correct: false },
+      { text: "Rio", correct: false },
+      { text: "Tudo", correct: false },
     ],
   },
   {
-    question: "What is a baby puffin called?",
+    question:
+      "Who is the only person to have a video game character in a UFC, WWE and NFL game?",
     answers: [
-      { text: "Cub", correct: false },
-      { text: "Pufflet", correct: false },
-      { text: "Puffling", correct: true },
-      { text: "Pup", correct: false },
+      { text: "Georges St-Pierre", correct: false },
+      { text: "Tyson Fury", correct: false },
+      { text: "Brock Lesnar", correct: true },
+      { text: "KEn Shamrock", correct: false },
     ],
   },
   {
