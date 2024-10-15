@@ -110,14 +110,14 @@ const questions = [
   {
     question: "What does UFC stand for?",
     answers: [
-      { text: "Ugly Fart Chump", correct: false },
+      { text: "Ugly Fart Chimp", correct: false },
       { text: "Ultimate Fighting Championship", correct: true },
       { text: "Universal Football Club", correct: false },
       { text: "Unhappy Ferret Council", correct: false },
     ],
   },
   {
-    question: "In what year where weight divisions introduced to UFC?",
+    question: "In what year were weight divisions introduced to UFC?",
     answers: [
       { text: "2008", correct: false },
       { text: "2001", correct: false },
