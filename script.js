@@ -145,7 +145,7 @@ const questions = [
     ],
   },
   {
-    question: "Who has the record for the most consecutive wins",
+    question: "Who has the record for the most consecutive wins in UFC?",
     answers: [
       { text: "Anderson Silva", correct: true },
       { text: "Demetrious Johnson", correct: false },
